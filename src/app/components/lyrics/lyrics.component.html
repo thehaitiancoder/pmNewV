@@ -1,0 +1,41 @@
+<app-lyric-navbar (categoryActive)='showCategory($event)'></app-lyric-navbar>
+<app-ldb-ads-on-top></app-ldb-ads-on-top>
+<div class="container">
+    <div class="row">
+        <div *ngIf="show === 'top100'" class="col-md-8 mb-3 px-0 px-md-3">
+            <section class="pr-lg-5">
+                <app-top-songs title="Top 100"></app-top-songs>
+            </section>
+        </div>
+        <div *ngIf="show === 'rap'" class="col-md-8 mb-3 px-0 px-md-3">
+            <section class="pr-lg-5">
+                <app-top-songs title="Rap"></app-top-songs>
+            </section>
+        </div>
+        <div *ngIf="show === 'konpa'" class="col-md-8 mb-3 px-0 px-md-3">
+            <section class="pr-lg-5">
+                <app-top-songs title="Konpa"></app-top-songs>
+            </section>
+        </div>
+        <div *ngIf="show === 'levanjil'" class="col-md-8 mb-3 px-0 px-md-3">
+            <section class="pr-lg-5">
+                <app-top-songs title="Levanjil"></app-top-songs>
+            </section>
+        </div>
+        <div *ngIf="show === 'rasin'" class="col-md-8 mb-3 px-0 px-md-3">
+            <section class="pr-lg-5">
+                <app-top-songs title="Rasin"></app-top-songs>
+            </section>
+        </div>
+        <div *ngIf="show === 'kanaval'" class="col-md-8 mb-3 px-0 px-md-3">
+            <section class="pr-lg-5">
+                <app-top-songs title="Kanaval" category="kanaval"></app-top-songs>
+            </section>
+        </div>
+        <div class="col-md-4 mb-3">
+            <app-punchline></app-punchline>
+            <app-ads-sidebar></app-ads-sidebar>
+            <app-news-sidebar></app-news-sidebar>
+        </div>
+    </div>
+</div>

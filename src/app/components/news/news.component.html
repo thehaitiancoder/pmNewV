@@ -1,0 +1,21 @@
+<app-news-navbar (emittedCategory)="changeCategory($event)"></app-news-navbar>
+<app-ldb-ads-on-top></app-ldb-ads-on-top>
+<div class="container">
+  <div class="row">
+    <div *ngIf="show === 'popilè'" class="col">
+      <app-news-category title="{{show}}"></app-news-category>
+    </div>
+    <div *ngIf="show === 'nouvo'" class="col">
+      <app-news-category title="{{show}}"></app-news-category>
+    </div>
+    <div *ngIf="show === 'rap'" class="col">
+      <app-news-category title="{{show}}"></app-news-category>
+    </div>
+    <div *ngIf="show === 'konpa'" class="col">
+      <app-news-category title="{{show}}"></app-news-category>
+    </div>
+    <div *ngIf="show === 'entènasyonal'" class="col">
+      <app-news-category title="{{show}}"></app-news-category>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="border-top border-warning bg-light pb-2">
+  <div *ngIf="ifCategoryCarnival" style="height: 0.5rem"></div>
+  <div class="d-flex justify-content-center bg-light">
+    <h5 [ngClass]="{'lead': addLeadClass}">{{title}} <i class="fas fa-arrow-circle-down mt-2 text-muted small"></i></h5>
+    <div *ngIf="ifCategoryCarnival" class="w-25"></div>
+    <form *ngIf="category === 'kanaval'">
+      <select class="form-control-sm mb-3" id="carnivalYear">
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option selected="selected">2019</option>
+      </select>
+    </form>
+  </div>
+
+  <div class="song mb-4 border border shadow-sm mx-4 bg-white">
+    <div *ngIf="hideSongRank" class="rankAndViews float-left mx-3 mt-3">
+      <p class="mb-0 font-weight-bold text-center h2">1</p>
+      <p class="mb-0 small text-muted text-center"><i class="far fa-eye"></i> 666</p>
+    </div>
+    <div class="card border-0">
+      <a [routerLink]="[ '/lyrics/', slug ]">
+        <div class="card-body p-0">
+          <div class="d-flex">
+            <img src="https://source.unsplash.com/collection/781477/96x96" alt="" class="align-self-center">
+            <div class="m-2">
+              <h1 class="lead display-4" id="headerText">Tuipe Ya Tuipe</h1>
+              <h3 class="small">Baky Popile ft T-Joe Zenny</h3>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="song mb-4 border border shadow-sm mx-4 bg-white">
+    <div *ngIf="hideSongRank" class="rankAndViews float-left mx-3 mt-3">
+      <p class="mb-0 font-weight-bold text-center h2">2</p>
+      <p class="mb-0 small text-muted text-center"><i class="far fa-eye"></i> 1.5k</p>
+    </div>
+    <div class="card border-0">
+      <a [routerLink]="[ '/lyrics/', slug ]">
+        <div class="card-body p-0">
+          <div class="d-flex">
+            <img src="https://source.unsplash.com/collection/781477/96x96" alt="" class="align-self-center">
+            <div class="m-2">
+              <h1 class="lead display-4" id="headerText">Tuipe Ya Tuipe</h1>
+              <h3 class="small">Baky Popile ft T-Joe Zenny</h3>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="song mb-4 border border shadow-sm mx-4 bg-white">
+    <div *ngIf="hideSongRank" class="rankAndViews float-left mx-3 mt-3">
+      <p class="mb-0 font-weight-bold text-center h2">3</p>
+      <p class="mb-0 small text-muted text-center"><i class="far fa-eye"></i> 10.8k</p>
+    </div>
+    <div class="card border-0">
+      <a [routerLink]="[ '/lyrics/', slug ]">
+        <div class="card-body p-0">
+          <div class="d-flex">
+            <img src="https://source.unsplash.com/collection/781477/96x96" alt="" class="align-self-center">
+            <div class="m-2">
+              <h1 class="lead display-4" id="headerText">Tuipe Ya Tuipe</h1>
+              <h3 class="small">Baky Popile ft T-Joe Zenny</h3>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>

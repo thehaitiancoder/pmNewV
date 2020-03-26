@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div *ngIf="isLyricsRoute">
+    <app-lyric-navbar></app-lyric-navbar>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

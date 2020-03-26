@@ -1,0 +1,63 @@
+$warningColor: #ffc107
+  
+nav
+  background-color: #e3f2fd
+
+@media (max-width: 768px)
+  .navbar-light .navbar-toggler
+    border-color: $warningColor
+    outline: none
+    padding: 0px
+  .navbar-brand
+    font-size: 1rem
+  .searchIconMobile
+    font-size: 1.5rem
+
+#facebook
+  background-color: #3b5998
+  border-color: #3b5998
+
+#twitter
+  background-color: #00acee
+  border-color: #00acee
+
+#google
+  background-color: #db4a39
+  border-color: #db4a39
+
+form
+  .form-control
+    border-radius: initial
+
+  span
+    text-decoration: underline
+    text-decoration-style: dotted
+    text-decoration-color: $warningColor
+    cursor: pointer
+
+button
+  border-radius: initial
+
+.searchControl
+  background-color: $warningColor
+  border: 1px solid $warningColor
+
+.searchControl:focus
+  border-color: inherit
+  -webkit-box-shadow: none
+  box-shadow: none
+
+::placeholder
+  color: rgba(0,0,0,.5)
+
+@media (min-width: 768px)
+  .searchControl:focus
+    width: 300px
+
+@media (min-width: 1024px)
+  .searchControl:focus
+    width: 500px
+
+.leaderboardAds
+  height: 90px
+  background-color: white

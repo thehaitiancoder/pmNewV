@@ -1,0 +1,26 @@
+ul
+  li
+    cursor: pointer
+    text-align: center
+    border-bottom: 3px solid #f8f9fa
+ 
+ul
+  li:hover
+    border-bottom: 3px solid #ffc107
+
+@media (max-width: 576px)
+  .mobile
+    display: initial
+  .desktopTablet
+    display: none
+  ul
+    li
+      height: 45px
+
+@media (min-width: 576.25px)
+  .mobile
+    display: none
+  .desktopTablet
+    display: inital
+  li
+    height: 35px
