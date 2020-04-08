@@ -31,6 +31,7 @@ import { CommentsComponent } from './components/comments/comments.component';
 import { LeaderboardAdsOnHomePageComponent } from './components/leaderboard-ads-on-home-page/leaderboard-ads-on-home-page.component';
 import { NewsArticleComponent } from './components/news-article/news-article.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ArtistComponent } from './components/artist/artist.component';
     CommentsComponent,
     LeaderboardAdsOnHomePageComponent,
     NewsArticleComponent,
-    ArtistComponent
+    ArtistComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
