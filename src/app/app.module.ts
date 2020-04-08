@@ -30,6 +30,7 @@ import { SongBreadcrumbComponent } from './components/song-breadcrumb/song-bread
 import { CommentsComponent } from './components/comments/comments.component';
 import { LeaderboardAdsOnHomePageComponent } from './components/leaderboard-ads-on-home-page/leaderboard-ads-on-home-page.component';
 import { NewsArticleComponent } from './components/news-article/news-article.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { NewsArticleComponent } from './components/news-article/news-article.com
     SongBreadcrumbComponent,
     CommentsComponent,
     LeaderboardAdsOnHomePageComponent,
-    NewsArticleComponent
+    NewsArticleComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { ArtistsComponent } from './components/artists/artists.component';
 import { NewsComponent } from './components/news/news.component';
 import { SongComponent } from './components/song/song.component';
 import { NewsArticleComponent } from './components/news-article/news-article.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'news/:slug', component: NewsArticleComponent },
   { path: 'lyrics', component: LyricsComponent },
   { path: 'lyrics/:slug', component: SongComponent },
-  { path: 'artists', component: ArtistsComponent }
+  { path: 'artists', component: ArtistsComponent },
+  { path: ':slug', component: ArtistComponent }
 ];
 
 @NgModule({
