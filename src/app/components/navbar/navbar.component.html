@@ -122,7 +122,8 @@
 
       <div class="d-none d-md-block navbar-nav ml-auto">
         <form>
-          <input type="text" class="form-control searchControl" placeholder="Rechech ...">
+          <input type="text" class="form-control searchControl" (focus)="showSearch(!showSearchSection)"
+            (blur)="showSearch(!showSearchSection)" placeholder="Rechech ...">
         </form>
       </div>
 
@@ -135,3 +136,7 @@
 
   </div>
 </nav>
+
+<div *ngIf="showSearchSection">
+  <app-search></app-search>
+</div>

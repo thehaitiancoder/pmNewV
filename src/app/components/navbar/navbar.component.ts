@@ -10,17 +10,23 @@ export class NavbarComponent implements OnInit {
   userIsSignIn: boolean = false;
   userIsSignUp: boolean = false;
   userIsRecoveringPassword = false;
+  showSearchSection: boolean = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  showSearch(searchIsActive: boolean): void {
+    searchIsActive
+      ? (this.showSearchSection = true)
+      : (this.showSearchSection = false);
   }
 
   showUserForm(action: string): void {
     if (action === 'signin') {
       this.authSectionHeader = 'Konekte sou PawolMizik';
       this.userIsSignIn = true;
-      this.userIsSignUp = false; 
+      this.userIsSignUp = false;
     } else if (action === 'signup') {
       this.authSectionHeader = 'Kreye kont ou sou PawolMizik';
       this.userIsSignUp = true;
@@ -32,5 +38,4 @@ export class NavbarComponent implements OnInit {
       this.userIsSignUp = false;
     }
   }
-
 }
