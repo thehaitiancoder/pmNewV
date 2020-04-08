@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class SongComponent implements OnInit {
   lyric: String = '<p>This is a test</p>';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
-
 }
