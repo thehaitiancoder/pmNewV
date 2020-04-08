@@ -8,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ArtistsAlphaComponent implements OnInit {
   @Input() title = String;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
-
 }
