@@ -10,16 +10,16 @@ export class NavbarComponent implements OnInit {
   userIsSignIn: boolean = false;
   userIsSignUp: boolean = false;
   userIsRecoveringPassword = false;
-  showSearchSection: boolean = false;
+  showSearchSection: boolean = true;
 
   constructor() {}
 
   ngOnInit() {}
 
   showSearch(searchIsActive: boolean): void {
-    searchIsActive
-      ? (this.showSearchSection = true)
-      : (this.showSearchSection = false);
+    // searchIsActive
+    //   ? (this.showSearchSection = true)
+    //   : (this.showSearchSection = false);
   }
 
   showUserForm(action: string): void {
