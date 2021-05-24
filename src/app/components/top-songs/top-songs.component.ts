@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class TopSongsComponent implements OnInit {
   @Input() title: String = '';
-  @Input() category = String;
+  @Input() category: String = '';
   slug: String = 'tuipe-ya-tuipe';
   hideSongRank: boolean = false;
   ifCategoryCarnival: boolean = false;
