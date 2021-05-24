@@ -1,9 +1,12 @@
+<!-- This component displays the artists for each alpha letter -->
+
 <div class="shadow-sm px-3 pb-3 pt-2 border-top border-warning bg-light mb-4">
   <div class="d-flex justify-content-center">
     <h5>{{title}} <i class="fas fa-arrow-circle-down mt-2 text-muted small"></i></h5>
   </div>
 
   <div class="card mb-4 mx-4 shadow-sm">
+    <a [routerLink]="['/ralph']">
     <div class="d-flex justify-content-start">
       <div>
         <img src="https://source.unsplash.com/collection/781477/96x96" alt="...">
@@ -11,7 +14,7 @@
       <div class="d-flex pl-2">
         <p class="lead display-4 my-auto">Boukman Eskperyans</p>
       </div>
-    </div>
+    </div></a>
   </div>
 
   <div class="card mb-4 mx-4 shadow-sm">

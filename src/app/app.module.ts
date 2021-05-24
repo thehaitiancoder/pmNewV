@@ -29,6 +29,7 @@ import { SongFactsComponent } from './components/song-facts/song-facts.component
 import { SongBreadcrumbComponent } from './components/song-breadcrumb/song-breadcrumb.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { LeaderboardAdsOnHomePageComponent } from './components/leaderboard-ads-on-home-page/leaderboard-ads-on-home-page.component';
+import { ArtistComponent } from './components/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { LeaderboardAdsOnHomePageComponent } from './components/leaderboard-ads-
     SongFactsComponent,
     SongBreadcrumbComponent,
     CommentsComponent,
-    LeaderboardAdsOnHomePageComponent
+    LeaderboardAdsOnHomePageComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
